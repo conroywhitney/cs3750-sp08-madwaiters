@@ -390,8 +390,8 @@ div.shopping_demo {
 
 .products {
   float:left;
-  width:200px;
-  height:200px;
+  width:160px;
+  height:160px;
   margin-right:10px;
   cursor:move;
 }
@@ -402,7 +402,6 @@ div.shopping_demo {
 }
 
 div.cart {
-  clear:both;
   border:1px solid #E8A400;
   background-color:white;
   padding:8px;
@@ -442,7 +441,6 @@ div.cart div {
   font-size:12px/14px;
   font-weight:normal;
   color:#444;
-  clear:left;
 }
 
 ul.sortablelist {
