@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    require_once("template.php");
+    require_once("sql.inc.php");
+
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
 
@@ -69,10 +77,25 @@
 
     <h2>Your favourites:</h2>
 
-    <div id="cart" class="cart" style="clear: left; margin-bottom: 100px; position: relative;">  
+    <div id="cart" class="cart">  
         <div id="items">
+        <?php
+            if ($_SESSION["items"]) {
+                foreach ($_SESSION["items"] as $item_id) {
+                    // find its info from the DB
+                    if ($result = mysql_query("SELECT * FROM items WHERE id='$item_id'")) {
+                        if ($row = mysql_fetch_assoc($result)) {
+                            // print off its template
+                            template($row);
+                        }
+                    }
+                }
+            }
+        ?>
         </div>
     </div>
+
+    <a href="logout.php">Clear Favourites</a>
     
     <div style="margin-top: 20px; height: 300px; width: 800px;">
 
@@ -101,7 +124,7 @@
         <!-- Third Draggable Item (div) -->
         <div class="products" id="product_68">
             <span>The Oldetimer Burger</span><br />
-            <img style="position: relative;" alt="Oldtimer" id="product_68_img" src="images/bacon.gif">
+            <img style="position: relative;" alt="Oldtimer" id="product_68_img" src="images/oldtimer.gif">
         </div>
         <script type="text/javascript">
             //<![CDATA[
