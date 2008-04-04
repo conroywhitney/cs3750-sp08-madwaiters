@@ -1,5 +1,23 @@
 <?php
 
+    function printFavorites() {
+        if ($_SESSION["items"]) {
+            foreach ($_SESSION["items"] as $item_id) {
+                // find its info from the DB
+                if ($result = mysql_query("SELECT * FROM items WHERE id='$item_id'")) {
+                    if ($row = mysql_fetch_assoc($result)) {
+                        // print off its template
+                        template($row);
+                    }
+                }
+            }
+        }
+    }
+
+?>
+
+<?php
+
     function template($row) {
         $id = $row["id"];
         $name = $row["name"];

@@ -77,27 +77,20 @@
 
     <h2>Your favourites:</h2>
 
-    <div id="cart" class="cart">  
+    <div id="cart" class="cart" style="float: left;">  
         <div id="items">
-        <?php
-            if ($_SESSION["items"]) {
-                foreach ($_SESSION["items"] as $item_id) {
-                    // find its info from the DB
-                    if ($result = mysql_query("SELECT * FROM items WHERE id='$item_id'")) {
-                        if ($row = mysql_fetch_assoc($result)) {
-                            // print off its template
-                            template($row);
-                        }
-                    }
-                }
-            }
-        ?>
+            <?php printFavorites(); ?>
         </div>
     </div>
 
+    <div id="wastebin" style="float: left; width: 160px; height: 160px; margin-left: 20px; margin-top: 0px; margin-bottom: 10px; ">
+        Drag Items Here to <u>Remove</u> them From Your Favourites
+    </div>
+
     <a href="logout.php">Clear Favourites</a>
-    
-    <div style="margin-top: 20px; height: 300px; width: 800px;">
+
+    <h2 style="margin-left: 50px;">Burgers:</h2>    
+    <div style="margin-left: 50px; height: 550px; width: 550px; border: 1px solid; padding: 10px;">
 
         <!-- First Draggable Item -->
         <div class="products" id="product_65">
@@ -132,19 +125,30 @@
             //]]>
         </script>
 
+        <!-- Fourth Draggable Item (div) -->
+        <div class="products" id="product_69">
+            <span>Big Mouth Bites</span><br />
+            <img style="position: relative;" alt="Big Mouth Bites" id="product_69_img" src="images/bites.gif">
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            new Draggable("product_69", {revert:true})
+            //]]>
+        </script>
+
     </div><!-- End div margin-bottom -->
   
 </div><!-- End content -->
 
 <script type="text/javascript">
 //<![CDATA[
-Droppables.add("cart", {accept:'products', hoverclass:'cart-active', onDrop:function(element){new Ajax.Updater('items', 'add.php', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('indicator')}, onLoading:function(request){Element.show('indicator')}, parameters:'id=' + encodeURIComponent(element.id)})}})
+Droppables.add("cart", {accept:'products', hoverclass:'cart-active', onDrop:function(element){new Ajax.Updater('items', 'add.php', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
 //]]>
 </script>
 
 <script type="text/javascript">
 //<![CDATA[
-Droppables.add("wastebin", {accept:'cart-items', hoverclass:'wastebin-active', onDrop:function(element){Element.hide(element); new Ajax.Updater('items', 'remove.php', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('indicator')}, onLoading:function(request){Element.show('indicator')}, parameters:'id=' + encodeURIComponent(element.id)})}})
+Droppables.add("wastebin", {accept:'cart-items', hoverclass:'wastebin-active', onDrop:function(element){Element.hide(element); new Ajax.Updater('items', 'remove.php', {asynchronous:true, evalScripts:true, parameters:'id=' + encodeURIComponent(element.id)})}})
 //]]>
 </script>
       
