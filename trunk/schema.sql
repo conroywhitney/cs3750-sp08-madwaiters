@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `name` varchar(128) NOT NULL,
   `type_id` int(11) NOT NULL,
   `price` float(5,2) default NULL,
-  `partial` varchar(128) default NULL,
+  `image` varchar(128) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=121 ;
 

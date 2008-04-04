@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 -- 
 -- Host: localhost
--- Generation Time: Apr 03, 2008 at 10:17 PM
+-- Generation Time: Apr 04, 2008 at 03:12 PM
 -- Server version: 5.0.45
 -- PHP Version: 5.2.3-1ubuntu6.3
 
@@ -17,7 +17,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Dumping data for table `items`
 -- 
 
-INSERT INTO `items` (`id`, `name`, `type_id`, `price`, `partial`) VALUES 
+INSERT INTO `items` (`id`, `name`, `type_id`, `price`, `image`) VALUES 
 (1, 'Southwestern Eggrolls', 1, 7.29, NULL),
 (2, 'Awesome Blossom', 1, 7.29, NULL),
 (3, 'Classic Nachos', 1, 6.49, NULL),
@@ -80,11 +80,11 @@ INSERT INTO `items` (`id`, `name`, `type_id`, `price`, `partial`) VALUES
 (62, 'Grilled Salmon w/ Garlic & Herbs', 9, 12.29, NULL),
 (63, 'Firecracker Talapia', 9, 10.49, NULL),
 (64, 'Southwest Cedar Plank Tilapia', 9, 10.49, NULL),
-(65, 'Mushroom-Swiss', 10, 6.99, NULL),
-(66, 'Bacon Burger', 10, 6.99, NULL),
+(65, 'Mushroom-Swiss', 10, 6.99, 'mushroom.gif'),
+(66, 'Bacon Burger', 10, 6.99, 'bacon.gif'),
 (67, 'Chipotle Bleu Cheese Bacon Burger', 10, 6.99, NULL),
-(68, 'Oldtimer', 10, 5.99, NULL),
-(69, 'Big Mouth Bites', 10, 7.49, NULL),
+(68, 'Oldtimer', 10, 5.99, 'oldtimer.gif'),
+(69, 'Big Mouth Bites', 10, 7.49, 'bites.gif'),
 (70, 'Jalapeno Smokehouse Bacon Big Mouth Burger', 10, 7.99, NULL),
 (71, 'Southern Smokehouse Bacon Big Mouth Burger', 10, 7.99, NULL),
 (72, 'Smokehouse Bacon Triple-The-Cheese Big Mouth Burger', 10, 7.99, NULL),
