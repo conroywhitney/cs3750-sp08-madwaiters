@@ -59,7 +59,7 @@
 				if (mysql_num_rows($result) > 0) {
 				    while ($row = mysql_fetch_assoc($result)) {
 				        // print off its template
-				        echo template($row);
+				        echo item_template($row);
 				    }
 				} else {
 					echo "no rows";
@@ -73,8 +73,6 @@
 			<?php
 
 		} // end if ($bSearching)
-
-		echo "<br />QUERY: $QUERY<br />";
 
 	}
 
@@ -117,22 +115,6 @@
 	<li><input type="checkbox" id="price_3" name="price[]" value="3" onclick="uncheck('price_all');" /><label for="price_3">6.00 - 6.99</label></li>
 	<li><input type="checkbox" id="price_4" name="price[]" value="4" onclick="uncheck('price_all');" /><label for="price_4">4.00 - 5.99</label></li>
 </ul>
-
-<!--
-<h3>Allergies</h3>
-<h4>Check boxes for allergies you have, and we'll find food you can enjoy!</h4>
-<ul>
-	<li><input type="checkbox" id="allergy_all" name="allergy[]" value="-1" checked="true" onclick="return uncheckall('allergy_', 8);" /><label for="allergy_all">No Allergies</label></li>
-	<li><input type="checkbox" id="allergy_1" name="allergy[]" value="1" onclick="uncheck('allergy_all');" /><label for="allergy_1">Egg</label></li>
-	<li><input type="checkbox" id="allergy_2" name="allergy[]" value="2" onclick="uncheck('allergy_all');" /><label for="allergy_2">Fish</label></li>
-	<li><input type="checkbox" id="allergy_3" name="allergy[]" value="3" onclick="uncheck('allergy_all');" /><label for="allergy_3">Dairy</label></li>
-	<li><input type="checkbox" id="allergy_4" name="allergy[]" value="4" onclick="uncheck('allergy_all');" /><label for="allergy_4">Peanut</label></li>
-	<li><input type="checkbox" id="allergy_5" name="allergy[]" value="5" onclick="uncheck('allergy_all');" /><label for="allergy_5">Shellfish</label></li>
-	<li><input type="checkbox" id="allergy_6" name="allergy[]" value="6" onclick="uncheck('allergy_all');" /><label for="allergy_6">Soy</label></li>
-	<li><input type="checkbox" id="allergy_7" name="allergy[]" value="7" onclick="uncheck('allergy_all');" /><label for="allergy_7">Tree Nut</label></li>
-	<li><input type="checkbox" id="allergy_8" name="allergy[]" value="8" onclick="uncheck('allergy_all');" /><label for="allergy_8">Wheat and Gluten</label></li>
-</ul>
--->
 
 		<input type="submit" value="Find Food!" />
 
