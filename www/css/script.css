@@ -396,6 +396,7 @@ div.shopping_demo {
   cursor:move;
     z-index: 5;
 	width: 200px;
+	height: 370px;
 }
 
 .products img {

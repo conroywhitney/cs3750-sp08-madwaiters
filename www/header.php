@@ -121,6 +121,6 @@ http://creativecommons.org/licenses/by-nc/2.5/
 	<div style="clear: both;">&nbsp;</div>
 
 
-	<div id="items" style="height: auto; margin-top: 15px;">
+	<div id="items" style="height: auto; margin-top: 15px; width: auto;">
 
 <!-- End header -->

@@ -9,7 +9,7 @@
 			if (mysql_num_rows($result) > 0) {
 			    while ($row = mysql_fetch_assoc($result)) {
 			        // print off its template
-			        echo item_template($row);
+			        item_template($row);
 			    }
 			} else {
 				echo "no rows";
