@@ -91,6 +91,12 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
 	</div><!-- End header_wrapper -->
 
+	<div id="subheader_wrapper">
+		<ul>
+			<?php require_once("subtabs.php"); ?>
+		</ul>
+	</div>
+
   <div id="content">
 
     <h2>Your favourites:</h2>

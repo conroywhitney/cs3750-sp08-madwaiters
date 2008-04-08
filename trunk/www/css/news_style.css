@@ -33,6 +33,28 @@ A:hover {
   margin:0px; padding:0px;
 }
 
+#subheader_wrapper {
+  margin-top:10px; padding:5px;
+	margin-bottom: 10px;
+	bottom-margin: 2px solid #000;
+	text-align: center;
+}
+
+#subheader_wrapper ul {
+	display: inline;
+}
+
+#subheader_wrapper li {
+	display: inline;
+}
+
+#subheader_wrapper span {
+	margin: 10px;
+	padding: 10px 5px;
+	/*border: 2px solid #4E7DD1;*/
+	font-size: 12pt;
+}
+
 #header {
   height: 60px;
   padding:15px;
