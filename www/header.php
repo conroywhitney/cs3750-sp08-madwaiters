@@ -87,15 +87,7 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
 		</div><!-- End header -->
 
-		<div id="navcontainer">
-			<ul id="navlist">
-			<li id="active"><a href="#" id="current">Item one</a></li>
-			<li><a href="#">Item two</a></li>
-			<li><a href="#">Item three</a></li>
-			<li><a href="#">Item four</a></li>
-			<li><a href="#">Item five</a></li>
-			</ul>
-		</div><!-- End navcontainer -->
+		<?php require_once("tabs.php"); ?>
 
 	</div><!-- End header_wrapper -->
 
@@ -115,6 +107,6 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
 	<div style="clear: both;">&nbsp;</div>
 
-    <a href="logout.php">Clear Favourites</a>
+    <a href="logout.php?next=<?php echo $_SERVER['REQUEST_URI']; ?>">Clear Favourites</a>
 
 <!-- End header -->
