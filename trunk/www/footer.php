@@ -2,6 +2,8 @@
 
 	</div><!-- End items -->
 
+	<div style="clear: both;"></div>
+
   </div><!-- End content -->
 
 </div><!-- End page_wrapper -->
