@@ -55,6 +55,13 @@
 		if ($bSearching) { 
 			if (strlen(rtrim($price_query, " AND ")) > 0) { $QUERY .= ") "; }
 
+			?>
+			<div style="float: left; height: 10px; margin-bottom: 25px; text-align: center; width: 740px;">
+				<a href="search.php"><h4>Search Again &raquo;</h4></a>
+			</div>
+			<?php
+
+
 			if ($result = mysql_query($QUERY)) {
 				if (mysql_num_rows($result) > 0) {
 				    while ($row = mysql_fetch_assoc($result)) {
@@ -68,9 +75,7 @@
 				echo "no result";
 			}
 
-			?>
-				<h4><a href="search.php">Search Again &raquo;</a></h4>
-			<?php
+
 
 		} // end if ($bSearching)
 
@@ -82,6 +87,7 @@
 
 	<form action="search.php" method="get">
 
+<div style="width: 350px; float: left;">
 <h3>Menu Section</h3>
 <h4>Check boxes for sections of the menu you want to search, and we'll do the rest!</h4>
 <ul>
@@ -103,7 +109,9 @@
 	<li><input type="checkbox" id="type_17" name="type[]" value="17" onclick="uncheck('type_all');" /><label for="type_17">Beers</label></li>
 	<li><input type="checkbox" id="type_18" name="type[]" value="18" onclick="uncheck('type_all');" /><label for="type_18">Wines</label></li>
 </ul>
+</div>
 
+<div style="width: 350px; float: left; margin-left: 15px;">
 <h3>Price</h3>
 <h4>Give us a price range for the item you are looking for</h4>
 <ul>
@@ -113,8 +121,31 @@
 	<li><input type="checkbox" id="price_3" name="price[]" value="3" onclick="uncheck('price_all');" /><label for="price_3">6.00 - 6.99</label></li>
 	<li><input type="checkbox" id="price_4" name="price[]" value="4" onclick="uncheck('price_all');" /><label for="price_4">4.00 - 5.99</label></li>
 </ul>
+</div>
 
-		<input type="submit" value="Find Food!" />
+<div style="width: 350px; float: left; margin-left: 15px;">
+<h3>Allergies</h3>
+<h4>Let us know what allergies you have</h4>
+<ul>
+	<li><input type="checkbox" disabled="true" />No Allergies</li>
+	<li><input type="checkbox" disabled="true" />Egg</li>
+	<li><input type="checkbox" disabled="true" />Fish</li>
+	<li><input type="checkbox" disabled="true" />Dairy</li>
+	<li><input type="checkbox" disabled="true" />Peanut</li>
+	<li><input type="checkbox" disabled="true" />Shellfish</li>
+	<li><input type="checkbox" disabled="true" />Soy</li>
+	<li><input type="checkbox" disabled="true" />Tree Nut</li>
+	<li><input type="checkbox" disabled="true" />Wheat and Gluten</li>
+</ul>
+</div>
+
+<br /><br />
+
+<div style="clear: both;"></div>
+
+	<center>
+		<input type="submit" value="Find Food!" style="margin-top: 20px; color: #2153AA; font-weight: bold;" />
+	</center>
 
 	</form>
 
