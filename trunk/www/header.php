@@ -102,20 +102,22 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
   <div id="content">
 
-    <h2>Your favourites:</h2>
+    <h2 style="margin-left: 20px;">Your favourites:</h2>
 
-    <div id="cart" class="cart" style="float: left;">  
+    <div id="cart" class="cart" style="float: left; margin-left: 20px; width: 740px;">  
         <div id="items">
             <?php printFavorites(); ?>
         </div>
     </div>
 
-    <div id="wastebin" style="float: left; width: 160px; height: 160px; margin-left: 20px; margin-top: 0px; margin-bottom: 10px; ">
+    <div id="wastebin" style="float: left; width: 740px; height: 30px; margin-left: 20px; margin-top: 5px; margin-bottom: 10px; ">
         Drag Items Here to <u>Remove</u> them From Your Favourites
     </div>
 
 	<div style="clear: both;">&nbsp;</div>
 
     <a href="logout.php?next=<?php echo $_SERVER['REQUEST_URI']; ?>">Clear Favourites</a>
+
+	<div id="items">
 
 <!-- End header -->

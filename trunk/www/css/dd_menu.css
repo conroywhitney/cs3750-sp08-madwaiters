@@ -3,13 +3,13 @@
 * html .dd_menu {width:746px; w\idth:745px;}
 /* remove all the bullets, borders and padding from the default list styling */
 .dd_menu ul {padding:0;margin:0;list-style-type:none;}
-.dd_menu ul ul {width:149px;}
+.dd_menu ul ul {width:130px;}
 /* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
-.dd_menu li {float:left;width:149px;position:relative;}
+.dd_menu li {float:left;width:130px;position:relative;}
 /* style the links for the top level */
 .dd_menu a, .dd_menu a:visited {display:block;font-size:11px;text-decoration:none; color:#fff; width:138px; height:30px; border:1px solid #000; border-width:1px 0 1px 1px; background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x; padding-left:10px; line-height:29px; font-weight: bold;}
 /* a hack so that IE5.5 faulty box model is corrected */
-* html .dd_menu a, * html .dd_menu a:visited {width:149px; w\idth:138px;}
+* html .dd_menu a, * html .dd_menu a:visited {width:130px; w\idth:138px;}
 
 /* style the second level background */
 .dd_menu ul ul a.drop, .dd_menu ul ul a.drop:visited {background:#d4d8bd url(http://www.cssplay.co.uk/graphics/drop.gif) bottom right no-repeat;}
