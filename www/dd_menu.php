@@ -41,6 +41,10 @@
 		</ul>
 	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 	</li>
+	<li><a href="search.php">SEARCH<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
 
 	</ul>
 

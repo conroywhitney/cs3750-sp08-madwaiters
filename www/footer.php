@@ -1,5 +1,7 @@
 <!-- Start footer -->
 
+	</div><!-- End items -->
+
   </div><!-- End content -->
 
 </div><!-- End page_wrapper -->

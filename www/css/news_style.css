@@ -98,6 +98,7 @@ A:hover {
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
+	width: 799px;
 }
 
 #footer {
@@ -178,6 +179,17 @@ A:hover {
   font-weight: bold;
   line-height: 12px;
   color: #2153AA;
+}
+
+#items {
+	margin-left: 50px;
+}
+
+#navcontainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 799px;
+	height: 32px;
 }
 
 #navlist
