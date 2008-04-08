@@ -22,10 +22,12 @@
         $id = $row["id"];
         $name = $row["name"];
         $image = $row["image"];
+		$price = $row["price"];
 ?>
         <div class="cart-items" id="item_<?php echo $id; ?>" style="float: left;">
             <span style="font-weight: bold; color: #2153AA;"><?php echo $name; ?></span><br />
             <img style="position: relative;" alt="<?php echo $name; ?>" id="item_<?php echo $id; ?>_img" src="images/<?php echo $image; ?>">
+			<?php if ($price): ?><span style="font-weight: bold; color: #2153AA;">$ <?php echo $price; ?></span><?php endif; ?>
         </div>
         <script type="text/javascript">
             //<![CDATA[
@@ -40,11 +42,13 @@
         $name = $row["name"];
         $image = $row["image"];
 		$desc = $row["desc"];
+		$price = $row["price"];
 ?>
         <div class="products" id="item_<?php echo $id; ?>">
             <span style="font-size: 12pt; color: #2153AA; font-weight: bold;"><?php echo $name; ?></span><br />
             <img style="position: relative;" alt="<?php echo $name; ?>" id="item_<?php echo $id; ?>_img" src="images/<?php echo $image; ?>">
-			<span><?php echo $desc; ?></span>
+			<span><?php echo $desc; ?></span><br />
+			<?php if($price): ?><span><h4>$ <?php echo $price; ?></h4></span><?php endif; ?>
         </div>
         <script type="text/javascript">
             //<![CDATA[
