@@ -1,6 +1,10 @@
 <div id="navcontainer">
 	<ul id="navlist">
 
+	<li <?php if ($_SERVER['PHP_SELF'] == "/3750/starters.php") { echo "id='current'"; } ?>>
+    	<a href="starters.php" <?php if ($_SERVER['PHP_SELF'] == "/3750/starters.php") { echo "id='current'"; } ?>>Starters</a>
+    </li>
+
 	<li <?php if ($_SERVER['PHP_SELF'] == "/3750/entrees.php") { echo "id='current'"; } ?>>
     	<a href="entrees.php" <?php if ($_SERVER['PHP_SELF'] == "/3750/entrees.php") { echo "id='current'"; } ?>>Entrees</a>
     </li>
@@ -10,7 +14,7 @@
     </li>
 
 	<li <?php if ($_SERVER['PHP_SELF'] == "/3750/drinks.php") { echo "id='current'"; } ?>>
-    	<a href="drinks.php" <?php if ($_SERVER['PHP_SELF'] == "/3750/drinks.php") { echo "id='current'"; } ?>>Drinks</a>
+    	<a href="drinks.php" <?php if ($_SERVER['PHP_SELF'] == "/3750/drinks.php") { echo "id='current'"; } ?>>Beverages</a>
     </li>
 
 	<li <?php if ($_SERVER['PHP_SELF'] == "/3750/sides.php") { echo "id='current'"; } ?>>
@@ -24,3 +28,4 @@
 	</ul>
 
 </div><!-- End navcontainer -->
+
