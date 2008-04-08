@@ -412,7 +412,8 @@ div.cart {
 
 div.cart-items {
     z-index: 5;
-	width: 155px;
+	width: 150px;
+	margin: 0px 3px;
 }
 
 span.title {
