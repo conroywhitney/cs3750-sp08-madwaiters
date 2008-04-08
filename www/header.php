@@ -15,7 +15,7 @@ License: Released Under the "Creative Commons License",
 http://creativecommons.org/licenses/by-nc/2.5/
 -->
 
-  <title>script.aculo.us - web 2.0 javascript demos</title>
+  <title>cs3750 - Team MADWaiters</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <link href="css/script.css" media="screen" rel="Stylesheet" type="text/css">
 	<link href="css/news_style.css" type="text/css" rel="stylesheet" />
@@ -99,89 +99,7 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
 	</div><!-- End header_wrapper -->
 
-	<div id="left_side">
-
-		<h3>Left Side</h3>
-
-		<p>
-		Lorem ipsum summo <a href="#">nominavi</a> pri et. Stet 
-		<a href="#">eruditi</a> perfecto at sed, ad enim constituto 
-		deseruisse quo, mea no quem eros munere. Ad splendide 
-		quaerendum per, ea minimum officiis oportere vel, an has 
-		perpetua percipitur. <a href="#">Consequat</a> contentiones 
-		his te, id noster menandri his. Per partem perfecto eu, est 
-		soluta accusata ex.
-		</p>
-
-		<h3>Left Side</h3>
-
-		<div class='featurebox_side'>
-		Lorem ipsum summo nominavi pri et. Stet eruditi perfecto at 
-		sed, ad enim <a href="#">constituto</a> deseruisse quo, mea 
-		no quem eros munere. 
-		</div>
-
-		<p>
-		Lorem ipsum summo nominavi pri et. Stet eruditi perfecto at sed, 
-		ad enim constituto deseruisse quo, mea no quem eros munere. Ad 
-		splendide quaerendum per, <a href="#">ea minimum officiis</a> 
-		oportere vel, an has perpetua percipitur. Consequat contentiones 
-		his te, id <a href="#">noster menandri</a> his. Per partem perfecto 
-		eu, est soluta accusata ex.
-		</p>
-
-		<div class='featurebox_side'>
-		Lorem <a href="#">ipsum summo</a> nominavi pri et. Stet eruditi 
-		perfecto at sed, ad enim constituto deseruisse quo, mea no quem 
-		eros munere. 
-		</div>
-
-	</div><!-- End left_side -->
-
-	<div id="right_side">
-
-		<h3>Right Side</h3>
-
-		<p>
-		<a href="#">Lorem ipsum summo</a> nominavi pri et. Stet eruditi 
-		perfecto at sed, ad enim constituto deseruisse quo, mea no quem 
-		eros munere.
-		</p>
-
-		<div class='featurebox_side'>
-		Lorem ipsum summo nominavi pri et. Stet eruditi perfecto at sed, 
-		ad enim constituto deseruisse quo, mea no quem eros munere. 
-		</div>
-
-		<h4>Sub Title</h4>
-
-		<p>
-		Ad splendide <a href="#">quaerendum</a> per, ea minimum officiis 
-		oportere vel, an has perpetua percipitur. Consequat contentiones 
-		his te, id <a href="#">noster</a> menandri his. Per partem perfecto 
-		eu, est soluta accusata ex.
-		</p>
-
-		<h3>Right Side</h3>
-
-		<div class='featurebox_side'>
-		<a href="#">Lorem ipsum</a> summo nominavi pri et. Stet eruditi 
-		perfecto at sed, ad enim constituto deseruisse quo, mea no quem 
-		eros munere. 
-		</div>
-
-		<p>
-		Lorem ipsum summo nominavi pri et. Stet eruditi perfecto at sed, ad 
-		enim constituto <a href="#">deseruisse</a> quo, mea no quem eros 
-		munere. Ad splendide quaerendum per, ea minimum officiis oportere vel, 
-		an has perpetua percipitur. Consequat contentiones his te, id noster 
-		<a href="#">menandri</a> his. Per partem perfecto eu, est soluta 
-		accusata ex.
-		</p>
-
-	</div><!-- End right_side -->
-
-<div id="content">
+  <div id="content">
 
     <h2>Your favourites:</h2>
 
