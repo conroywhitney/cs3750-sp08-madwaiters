@@ -9,7 +9,6 @@
 	case "/3750/entrees.php": ?>
 	<li><span><a href="entrees.php?type=3">Fire-Grilled Steaks</a></span> | </li>
 	<li><span><a href="entrees.php?type=5">Kickin' Chicken</a></span> | </li>
-	<li><span><a href="entrees.php?type=6">Guiltless Grill</a></span> | </li>
 	<li><span><a href="entrees.php?type=8">Sizzling Fajitas</a></span> | </li>
 	<li><span><a href="entrees.php?type=9">Savory Seafood</a></span> | </li>
 	<li><span><a href="entrees.php?type=10">Big Mouth Burgers</a></span> | </li>
