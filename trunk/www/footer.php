@@ -1,6 +1,6 @@
-<!-- End footer -->
+<!-- Start footer -->
 
-</div><!-- End content -->
+  </div><!-- End content -->
 
 </div><!-- End page_wrapper -->
 
