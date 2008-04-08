@@ -23,7 +23,23 @@
 
 	<!-- Show sampling of all -->
 
+	<h3>Recommended Drinks</h3>
+
 <?php
+
+		$query = "SELECT * FROM items WHERE id='93' OR id='96' OR id='97' ";
+		if ($result = mysql_query($query)) {
+			if (mysql_num_rows($result) > 0) {
+			    while ($row = mysql_fetch_assoc($result)) {
+			        // print off its template
+			        item_template($row);
+			    }
+			} else {
+				echo "no rows";
+			}
+	    } else {
+			echo "no result";
+		}
 
 	}
 
