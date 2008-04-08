@@ -395,6 +395,7 @@ div.shopping_demo {
     margin-bottom: 30px;
   cursor:move;
     z-index: 5;
+	width: 200px;
 }
 
 .products img {
@@ -411,6 +412,7 @@ div.cart {
 
 div.cart-items {
     z-index: 5;
+	width: 155px;
 }
 
 span.title {

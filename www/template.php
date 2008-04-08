@@ -24,7 +24,7 @@
         $image = $row["image"];
 ?>
         <div class="cart-items" id="item_<?php echo $id; ?>" style="float: left;">
-            <span><?php echo $name; ?></span><br />
+            <span style="font-weight: bold; color: #2153AA;"><?php echo $name; ?></span><br />
             <img style="position: relative;" alt="<?php echo $name; ?>" id="item_<?php echo $id; ?>_img" src="images/<?php echo $image; ?>">
         </div>
         <script type="text/javascript">
@@ -39,10 +39,12 @@
         $id = $row["id"];
         $name = $row["name"];
         $image = $row["image"];
+		$desc = $row["desc"];
 ?>
         <div class="products" id="item_<?php echo $id; ?>">
-            <span><?php echo $name; ?></span><br />
+            <span style="font-size: 12pt; color: #2153AA; font-weight: bold;"><?php echo $name; ?></span><br />
             <img style="position: relative;" alt="<?php echo $name; ?>" id="item_<?php echo $id; ?>_img" src="images/<?php echo $image; ?>">
+			<span><?php echo $desc; ?></span>
         </div>
         <script type="text/javascript">
             //<![CDATA[
