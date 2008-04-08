@@ -4,7 +4,7 @@
 	
 	$bSearching = false;
 
-	if (count($_POST) > 0) {
+	if (count($_GET) > 0) {
 
 		$base_query = "SELECT t0.*, t1.name AS type ";
 		$base_query .= "FROM items AS t0 ";
@@ -16,8 +16,8 @@
 
 		// TYPE
 		$type_query = null;
-		if ($_POST["type"]) {
-			foreach ($_POST["type"] as $type) {
+		if ($_GET["type"]) {
+			foreach ($_GET["type"] as $type) {
 				if ($type > -1) {
 					$type_query .= "t0.type_id='$type' OR ";
 				}
@@ -29,8 +29,8 @@
 
 		// PRICE
 		$price_query = null;
-		if ($_POST["price"]) {
-			foreach ($_POST["price"] as $price) {
+		if ($_GET["price"]) {
+			foreach ($_GET["price"] as $price) {
 				if ($price > -1) {
 					switch ($price) {
 						case 1: $price_query .= "(t0.price >= 9.00) OR "; break;
@@ -80,7 +80,7 @@
 
 <?php if (!$bSearching): ?>
 
-	<form action="search.php" method="post">
+	<form action="search.php" method="get">
 
 <h3>Menu Section</h3>
 <h4>Check boxes for sections of the menu you want to search, and we'll do the rest!</h4>
