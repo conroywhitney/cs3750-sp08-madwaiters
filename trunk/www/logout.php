@@ -3,6 +3,8 @@
     session_start();
     session_destroy();
 
-    header("Location: drag.php");
+	$next = $_GET["next"];
+
+    header("Location: $next");
 
 ?>
