@@ -1,9 +1,4 @@
-<?php
-    session_start();
-
-    require_once("template.php");
-    require_once("sql.inc.php");
-?>
+<?php require_once("header.php"); ?>
 
 <?php 
 	
@@ -160,3 +155,5 @@
 </script>
 
 <?php endif; ?>
+
+<?php require_once("footer.php"); ?>
