@@ -1,0 +1,54 @@
+.dd_menu {width:745px; height:32px; font-size:0.85em; position:relative; z-index:100;border-right:1px solid #000;}
+/* hack to correct IE5.5 faulty box model */
+* html .dd_menu {width:746px; w\idth:745px;}
+/* remove all the bullets, borders and padding from the default list styling */
+.dd_menu ul {padding:0;margin:0;list-style-type:none;}
+.dd_menu ul ul {width:149px;}
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.dd_menu li {float:left;width:149px;position:relative;}
+/* style the links for the top level */
+.dd_menu a, .dd_menu a:visited {display:block;font-size:11px;text-decoration:none; color:#fff; width:138px; height:30px; border:1px solid #000; border-width:1px 0 1px 1px; background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x; padding-left:10px; line-height:29px; font-weight: bold;}
+/* a hack so that IE5.5 faulty box model is corrected */
+* html .dd_menu a, * html .dd_menu a:visited {width:149px; w\idth:138px;}
+
+/* style the second level background */
+.dd_menu ul ul a.drop, .dd_menu ul ul a.drop:visited {background:#d4d8bd url(http://www.cssplay.co.uk/graphics/drop.gif) bottom right no-repeat;}
+/* style the second level hover */
+.dd_menu ul ul a.drop:hover{background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x;}
+.dd_menu ul ul :hover > a.drop {background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x;}
+/* style the third level background */
+.dd_menu ul ul ul a, .dd_menu ul ul ul a:visited {background:#e2dfa8;}
+/* style the third level hover */
+.dd_menu ul ul ul a:hover {background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x;}
+
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.dd_menu ul ul {visibility:hidden;position:absolute;height:0;top:31px;left:0; width:149px;border-top:1px solid #000;}
+/* another hack for IE5.5 */
+* html .dd_menu ul ul {top:30px;t\op:31px;}
+
+/* position the third level flyout menu */
+.dd_menu ul ul ul{left:149px; top:-1px; width:149px;}
+
+/* position the third level flyout menu for a left flyout */
+.dd_menu ul ul ul.left {left:-149px;}
+
+/* style the table so that it takes no ppart in the layout - required for IE to work */
+.dd_menu table {position:absolute; top:0; left:0; border-collapse:collapse;;}
+
+/* style the second level links */
+.dd_menu ul ul a, .dd_menu ul ul a:visited {background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x; color:#FFF; height:auto; line-height:1em; padding:5px 10px; width:128px;border-width:0 1px 1px 1px;}
+/* yet another hack for IE5.5 */
+* html .dd_menu ul ul a, * html .dd_menu ul ul a:visited {width:150px;w\idth:128px;}
+
+/* style the top level hover */
+.dd_menu a:hover, .dd_menu ul ul a:hover{color:#fff; background:#2153AA url('../img/tab_bg.gif') bottom left repeat-x;}
+.dd_menu :hover > a, .dd_menu ul ul :hover > a {color:#FFF;background:#3364BB;;}
+
+/* make the second level visible when hover on first level list OR link */
+.dd_menu ul li:hover ul,
+.dd_menu ul a:hover ul{visibility:visible; }
+/* keep the third level hidden when you hover on first level list OR link */
+.dd_menu ul :hover ul ul{visibility:hidden;}
+/* make the third level visible when you hover over second level list OR link */
+.dd_menu ul :hover ul :hover ul{ visibility:visible;}
