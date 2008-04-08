@@ -89,10 +89,8 @@
 	<li><input type="checkbox" id="type_1" name="type[]" value="1" onclick="uncheck('type_all');" /><label for="type_1">Starters</label></li>
 	<li><input type="checkbox" id="type_2" name="type[]" value="2" onclick="uncheck('type_all');" /><label for="type_2">Soups</label></li>
 	<li><input type="checkbox" id="type_3" name="type[]" value="3" onclick="uncheck('type_all');" /><label for="type_3">Fire-Grilled Steaks</label></li>
-	<li><input type="checkbox" id="type_4" name="type[]" value="4" onclick="uncheck('type_all');" /><label for="type_4">Create Your Own Combo</label></li>
 	<li><input type="checkbox" id="type_5" name="type[]" value="5" onclick="uncheck('type_all');" /><label for="type_5">Kickin' Chicken</label></li>
 	<li><input type="checkbox" id="type_6" name="type[]" value="6" onclick="uncheck('type_all');" /><label for="type_6">Guiltless Grill</label></li>
-	<li><input type="checkbox" id="type_7" name="type[]" value="7" onclick="uncheck('type_all');" /><label for="type_7">Grilled Baby Back Ribs</label></li>
 	<li><input type="checkbox" id="type_8" name="type[]" value="8" onclick="uncheck('type_all');" /><label for="type_8">Sizzling Fajitas</label></li>
 	<li><input type="checkbox" id="type_9" name="type[]" value="9" onclick="uncheck('type_all');" /><label for="type_9">Savory Seafood</label></li>
 	<li><input type="checkbox" id="type_10" name="type[]" value="10" onclick="uncheck('type_all');" /><label for="type_10">Big Mouth Burgers</label></li>
