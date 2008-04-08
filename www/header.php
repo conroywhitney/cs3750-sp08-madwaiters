@@ -113,6 +113,8 @@ http://creativecommons.org/licenses/by-nc/2.5/
         Drag Items Here to <u>Remove</u> them From Your Favourites
     </div>
 
+	<div style="clear: both;">&nbsp;</div>
+
     <a href="logout.php">Clear Favourites</a>
 
 <!-- End header -->
