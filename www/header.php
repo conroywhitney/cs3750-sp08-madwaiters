@@ -19,6 +19,7 @@ http://creativecommons.org/licenses/by-nc/2.5/
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <link href="css/script.css" media="screen" rel="Stylesheet" type="text/css">
 	<link href="css/news_style.css" type="text/css" rel="stylesheet" />
+	<link href="css/dd_menu.css" type="text/css" rel="stylesheet" />
   <script src="javascript/prototype.js" type="text/javascript"></script>
   <script src="javascript/effects.js" type="text/javascript"></script>
   <script src="javascript/dragdrop.js" type="text/javascript"></script>
@@ -87,15 +88,17 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
 		</div><!-- End header -->
 
-		<?php require_once("tabs.php"); ?>
+		<?php require_once("dd_menu.php"); ?>
 
 	</div><!-- End header_wrapper -->
 
+<!--
 	<div id="subheader_wrapper">
 		<ul>
 			<?php require_once("subtabs.php"); ?>
 		</ul>
 	</div>
+-->
 
   <div id="content">
 
