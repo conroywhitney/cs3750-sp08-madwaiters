@@ -118,6 +118,6 @@ http://creativecommons.org/licenses/by-nc/2.5/
 
     <a href="logout.php?next=<?php echo $_SERVER['REQUEST_URI']; ?>">Clear Favourites</a>
 
-	<div id="items">
+	<div id="items" style="height: auto; margin-top: 15px;">
 
 <!-- End header -->
